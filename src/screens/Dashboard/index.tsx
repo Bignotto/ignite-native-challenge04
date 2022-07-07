@@ -37,11 +37,6 @@ export function Dashboard() {
   const { addRepository, repositories } = useRepositories();
 
   function handleAddRepository() {
-    /**
-     * TODO:
-     * - call addRepository function sending inputText value;
-     * - clean inputText value.
-     */
     addRepository(inputText);
     setInputText("");
   }

@@ -41,10 +41,6 @@ export function CardAnimation({ children, ...rest }: CardAnimationProps) {
   });
 
   useEffect(() => {
-    /**
-     * TODO - setup cardOpacity.value and cardOffset.value with
-     * withTiming()
-     */
     cardOpacity.value = withTiming(100, { duration: 1000 });
     cardOffset.value = withTiming(100, { duration: 1000 });
   }, []);
